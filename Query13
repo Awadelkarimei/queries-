@@ -1,0 +1,4 @@
+SELECT 
+     UPPER(FirstName) AS FirstName,
+     UPPER(LastName) AS LastName 
+FROM Student;
