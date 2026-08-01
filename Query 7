@@ -1,0 +1,9 @@
+SELECT 
+c.CourseName,
+AVG (g.FinalExam) AS AverageFinal 
+FROM Grade g 
+JOIN Enrollment e 
+ON g.EnrollmentID = e.EnrollmentID 
+JOIN course c 
+ON e.CourseID = c.CourseID
+GROUP BY c.CourseName;
