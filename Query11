@@ -1,0 +1,12 @@
+SELECT 
+
+s.FirstName,
+s.LastName,
+g.LetterGrade
+
+FROM Student s 
+JOIN Enrollment e 
+ON s.StudentID = g.studentID 
+JOIN Grade g 
+ON e.EnrollmentID = g.EnrollmentID 
+WHERE g.Lettergrade = 'A';
