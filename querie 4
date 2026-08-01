@@ -1,0 +1,6 @@
+SELECT s.FirstName, s.LastName, c.CourseName, sem.semesterName
+FROM Enrollment e 
+
+JOIN Student s ON e.StudentID = s.StudentID 
+JOIN Course c ON e.courseID = c.CourseID
+JOIN semester sem ON e.SemesterID = sem.SemesterID; 
