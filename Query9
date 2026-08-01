@@ -1,0 +1,2 @@
+SELECT MIN(Midterm) AS LowestMidterm 
+FROM Grade;
