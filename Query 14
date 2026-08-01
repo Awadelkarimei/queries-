@@ -1,0 +1,6 @@
+SELECT 
+   StudentID,
+   FirstName,
+   LastName, 
+   EXTRACT(YEAR FROM AGE(DateOfBirth)) AS Age 
+FROM Student;
