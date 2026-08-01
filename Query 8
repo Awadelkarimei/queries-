@@ -1,0 +1,2 @@
+SELECT MAX (FinalExam) AS HighestScore 
+FROM Grade;
