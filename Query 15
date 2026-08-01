@@ -1,0 +1,6 @@
+FROM Student 
+WHERE DepartmentID = ( 
+      SELECT DepartmentID 
+      FROM Department
+      WHERE DepartmentName = 'Computer Engineering'
+);
