@@ -1,0 +1,8 @@
+SELECT 
+   d.DepartmentName, 
+   COUNT(c.CourseID) AS TotalCourses 
+FROM Department d 
+LEFT JOIN Course c 
+ON d.DepartmentID = c.DepartmentID 
+GROUP BY d.DepartmentName 
+ORDER BY TotalCourses DESC;
