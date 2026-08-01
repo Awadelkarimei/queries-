@@ -1,0 +1,9 @@
+ SELECT
+  s.StudentID,
+  s.FirstName,
+  s.LastName,
+  d.DepartmentName
+
+  FROM student s 
+  JOIN Department d
+  ON s.DepartmentID = d.DepartmentID;
