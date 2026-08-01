@@ -1,0 +1,6 @@
+SELECT 
+    StudentID, 
+    COUNT(*) AS TotalCourses 
+FROM Enrollment 
+GROUP BY StudentID 
+HAVING COUNT(*) > 1;
