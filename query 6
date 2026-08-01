@@ -1,0 +1,7 @@
+SELECT 
+  d.DepartmentName,
+  COUNT(s.StudentID) AS TotalStudents
+  FROM department d 
+  left JOIN Student s 
+  ON d.DepartmentID = s.DepartmentID 
+  GROUP BY d.DepartmentName; 
