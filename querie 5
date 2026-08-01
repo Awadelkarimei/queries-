@@ -1,0 +1,5 @@
+SELECT s.FirstName, s.LastName, c.CourseName, g.midterm, g.FinalExam,g.LetterGrade
+FROM Grade g 
+JOIN Enrollment e ON g.EnrollmentID = e.EnrollmentID 
+JOIN student s ON e.StudentID = s.StudentID 
+JOIN Course c ON e.CourseID = c.CourseID;
