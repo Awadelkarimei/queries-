@@ -1,0 +1,3 @@
+ SELECT c.CourseName,l.FirstName,l.LastName
+ FROM course c 
+ JOIN Lecturer l ON c.LecturerID = l.LecturerID; 
